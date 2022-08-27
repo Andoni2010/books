@@ -1,0 +1,286 @@
+:root{
+    --Primario: #678174;
+    --Secundario: #ffffff;
+    --Terciario: #ffdf88;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Primario);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+nav.navbar{
+    background-color: var(--Primario);
+}
+.nav-link, .navbar-nav .nav-link.active{
+    color: var(--Secundario);
+}
+.nav-link:hover{
+    transition: 1s;
+    border-bottom: solid 1px var(--Terciario);
+}
+.btn{
+    color: var(--Terciario);
+    border: #ffdf88 solid 2px;
+}
+.header{
+    background-image: url(pexels-meruyert-gonullu-6034021.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    box-shadow: var(--Secundario) 1px 3px 1px;
+}
+.header, figure{
+    margin-top: 10px;
+    background-color:  var(--Primario);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    color: var(--Secundario);
+}
+
+.header, figcaption{
+    font-size: small;
+    font-weight: bold;
+    color: var(--Terciario);
+    padding-bottom: 10px;
+}
+.titulo{
+    width: 30%;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: var(--Terciario) solid 1px;
+    color: var(--Secundario);
+    text-align: center;    
+    margin: 40px auto;
+
+}
+.contain{
+    margin: 20px 0 20px 0;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.img1, .img2{
+    position: absolute;
+    background: red;
+    margin: 0 4px 0 auto;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    left: 15%;
+}
+.img1{
+    background-image: url(IMG-0308.jpg);
+    background-size: cover;
+}
+.img2{
+    background: var(--Secundario);
+    color: #678174;
+    box-shadow: var(--Terciario) 10px 10px 10px;
+    text-align: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    transition: 2s;
+    clip-path: circle(18.0% at 91% 91%);
+}
+.img2, h1{
+    margin: 2px auto;
+}
+.img2 p{
+    padding-top: 14px;
+    float: right;
+}
+.img2:hover{
+    clip-path: circle(116.4% at 91% 91%);
+}
+.img1:hover ~ .img2{
+    clip-path: circle(12.9% at 91% 91%);
+}
+.card{
+    position: relative;
+    margin: 0 36%;
+    font-size: medium;
+    width: 60%;
+    box-shadow: black 1px 7px 24px
+}
+.card-title, .card-text{
+    color: var(--Primario);
+}
+.compañeros{
+    background: var(--Terciario);
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 360px;
+    box-shadow: var(--Secundario) 1px 3px 1px;
+    margin: 60px auto 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.compañeros div{
+    padding: 20px;
+    color: var(--Secundario);
+    width: 400px;
+    margin: 20px;
+    height: 300px;
+    text-align: justify;
+    border-radius: 5px;
+    border: 2px solid var(--Secundario);
+}
+.compañeros h1:hover{
+    transition: 2s;
+    border-bottom: var(--Terciario) solid 1px;
+}
+.compañeros small{
+    --bs-text-opacity: 1;
+    font-size: small;
+    font-weight: bold;
+    color: var(--Terciario);
+    padding-bottom: 10px;
+}
+.textoc{
+    background: var(--Primario);
+    transition: 1s;
+
+}
+.textoc:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(103,129,116,1) 20%);
+    border-radius: 0px;
+    border: none;
+    transform: scale(1.2);
+}
+@media (max-width:1000px) {
+    .textoc{
+        overflow-y: scroll;
+    }
+}
+.fotoc{
+    margin: auto;
+    background-image: url(IMG-0503.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.fotoc2{
+    background-image: url(B1F00922-04ED-4D4C-B5F6-66C261ADFE71.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.Final{
+    background: var(--Secundario);
+    width: 100%;
+    height: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: black 2px 20px 50px;
+}
+.FinalT{
+    text-align: center;
+}
+.FinalT h1{
+    font-weight: 700;
+    font-style: italic;
+    font-size: small;
+    padding-top: 10%;
+}
+.cajas{
+    color: var(--Primario);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 80px 0;
+    justify-content: center;
+
+}
+.contactos{
+    border-radius: 10px;
+    margin: 0 20px;
+    width: 300px;
+    height: 400px;
+    background: var(--Terciario);
+    box-shadow: black 1px 7px 24px;
+}
+.formulaios{
+    border-radius: 10px;
+    color: var(--Primario);
+    padding: 20px;
+    background: var(--Terciario);
+    box-shadow: black 1px 7px 24px;
+    margin-bottom: 10px;
+}
+.contactos ul{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 90px 40px;
+}
+@media (max-width:900px) {
+    .cajas{
+        margin: auto;
+        width: 90%;
+        }
+    .contactos{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .formulaios{
+        width: 90%;
+    }
+    
+}
+.c1{
+    width: 100%;
+    height: 400px;
+    background: var(--Secundario);
+}
+.c2{
+    width: 100%;
+    height: 400px;
+    background: var(--Terciario);
+}
+.c3{
+    width: 100%;
+    height: 400px;
+    background: var(--Primario);
+}
+.PreciosD{
+    background: white;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 10%;
+    color: var(--Primario);
+    text-shadow: var(--Primario) 1px 6px 6px;
+    box-shadow: black 2px 20px 50px;
+}
+.PreciosD h1{
+    color: var(--Primario);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 90px 0;
+}
+.PreciosD p{
+    font-weight: 700;
+    font-size: medium;
+}
+.cardPd{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+}
+.cardPd .card{
+    margin: 0 auto;
+    margin-bottom: 10%;
+    box-shadow: black 2px 20px 50px;
+}
+.cardPd .card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+    transition: 1s;
+}
